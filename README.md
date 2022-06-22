@@ -56,12 +56,11 @@ $ docker-compose up -d
 ```
 > When you run `docker-compose up -d` (run a server), database will create and migrate. 
 
-Migration database
-
+When we have any changes in models, run a command follow below.
 ```
-$ docker-compose exec api alembic revision --autogenerate "Alter a column"
+$ docker-compose exec api alembic revision --autogenerate "Alter a column" #create versions file for mark a changing
 
-$ docker-compose exec api alembic upgrade head
+$ docker-compose exec api alembic upgrade head  # Execute the changes.
 ```
 To check the logs, run:
 ```
@@ -70,7 +69,7 @@ docker-compose logs
 Navigate to http://localhost:9000/docs for viewing API documents
 
 
-#### 3. Server without docker
+#### 3. Without docker
 Requisition:
 - Any virtual environment (conda, python venv) (https://docs.python.org/3/library/venv.html)
 - Pip installation (https://pip.pypa.io/en/stable/installation/)
