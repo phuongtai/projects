@@ -69,6 +69,3 @@ uvicorn main:app --host 0.0.0.0 --port 9000
 ```
 Navigate to http://localhost:9000/docs for viewing API documents
 
-
-![This is an image](./apidocs.png)
-
