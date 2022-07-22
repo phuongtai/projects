@@ -1,40 +1,7 @@
-# taiphuong_applied_position_technical_assessment
-Tai Phuong's Technical Assessment
-
-### 1. Choice of Framework & Library:
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. (https://fastapi.tiangolo.com/)
-#### a. What are the benefits & drawbacks associated with that choice?
-<b>Benefits</b>: 
-- I've chosen that because it quite fast and easy to implementing.
-- with external  libraries for serializering objects, migration database, ORM, we can work that independently, very flexible, capitable for switch relation database with no-relation database if necessary.
-- Use asynchronous programming for optimizing the bunch of work.
-- Generate well documentation for any sides.
-
-<b>Drawbacks</b>: something not perfect like Django Rest Framework, not easy to get related data when we use many to many relation. I need more time for building that.
-
-
-#### b. What are the assumptions underlying that choice?
-
-FastAPI will adapt to scalable any project from small, we can start with anything small, and scale it by adding multiple services under microservices architecture
-
-### 2. Potential Improvement
-
-- I will take time for working with serializing and deserializing with multiple objects as many to many. You can see it with `working_hours`. I did my code as manually for achieving result
-- Authorization and authentication
-- Structure code for adding new layer for business logic
-
-### 3. Production consideration:
-- Working perfect with migration using alembic, fix anny issues we have, very dangerous if we can not handle of changes of data and structures
-- FastAPI quite good for production, help we reduce more steps for production.
-
-### 4. Assumptions
-
-- I assumed that system have a lot of doctors working with specific working hours, address, and consultation fee.
-- I design an API create a doctor with their working hours, if have time I will design a filter can choose a day like(Monday), and choose the time like (8:00 -> 17:00)
-
+# Pesonal Projects
 
 ------------
-### 5. Installation:
+### Installation:
 
 #### 1. Docker
 Requisition:
